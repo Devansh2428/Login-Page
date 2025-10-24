@@ -1,0 +1,112 @@
+body {
+    background: linear-gradient(135deg, #edaf29, #3468a8,#0f9d58);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-box {
+    border: 0.1em solid white;
+    border-radius: 30px;
+    width: 90%;
+    /* height: 55%; */
+    max-width: 350px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+}
+
+.text-field {
+    width: 80%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+
+.text-field::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.btn-style {
+    padding: 10px 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    border-radius: 25px;
+    background-color: white;
+    color: rgb(6, 37, 6);
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-style:hover {
+    background-color: rgb(4, 184, 255);
+    color: white;
+}
+
+.an-btn {
+    margin-top: 10px;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 0.9rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.an-btn:hover{
+    color: rgb(36, 36, 189);
+}
+#register-div,
+#result-box {
+    display: none;
+}
+#result-box {
+    font-size: 1rem;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    body {
+        background: linear-gradient(135deg, #e3b119, #bf23ca);
+        padding: 0 10px;
+    }
+    .center-box {
+        width: 100%;
+        height: auto;
+        padding: 25px 15px;
+        border-radius: 20px;
+    }
+
+    .text-field {
+        width: 90%;
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+
+    .btn-style {
+        width: 90%;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .an-btn {
+        font-size: 0.85rem;
+    }
+
+    #result-box {
+        font-size: 1rem;
+    }
+}
